@@ -108,4 +108,7 @@ This leaves persistence decisions to the consumer.
 
 - This package was shaped against the live Swagger 2.0 spec fetched on April 27, 2026.
 - Real authenticated integration verification requires a valid GEMI OpenData API key.
-- License is currently `UNLICENSED`; do not treat this package as open source unless the repository license is changed.
+
+## License
+
+MIT
