@@ -1,0 +1,50 @@
+{
+  "name": "@infinitypartners/gemi-opendata-client",
+  "version": "0.1.0",
+  "description": "Typed Node.js client for the GEMI OpenData API.",
+  "author": "Infinity Partners",
+  "license": "UNLICENSED",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Infinity-Partners/gemi-opendata-client.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Infinity-Partners/gemi-opendata-client/issues"
+  },
+  "homepage": "https://github.com/Infinity-Partners/gemi-opendata-client#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "node -e \"require('fs').rmSync('dist', {recursive: true, force: true})\"",
+    "prepack": "npm run clean && npm run build",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "gemi",
+    "opendata",
+    "api",
+    "client",
+    "greece"
+  ],
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
